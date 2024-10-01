@@ -1,9 +1,9 @@
-// import { describe, it, expect } from 'vitest'
+import { describe, test, expect } from 'vitest'
 
 import { mount } from "@vue/test-utils";
 import { createRouter, createWebHistory } from "vue-router";
 
-import PostsView from "../PostsView.vue";
+import PostsView from "@/views/PostsView.vue";
 import { describe } from "vitest";
 
 describe("PostsView", () => {
@@ -15,7 +15,7 @@ describe("PostsView", () => {
       routes: [
         {
           path: "/posts",
-          name: "posts",
+          name: "PostsView",
           component: PostsView,
         },
       ],
